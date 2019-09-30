@@ -1,8 +1,7 @@
-# Tony Chan, 30032839, T12
-# Python House Adventure Part 2
+# Tony Chan
+# Python House Adventure
 # In the first part, there's 3 rooms in a house, one is locked. To get it unlocked, player must turn a dial to a specific colour and a lever to a certain position
 # Once unlocking the door, there are 3 more rooms and player must get the plant to be fertilized by distracting a cat and feeding a mouse
-
 
 def kitch(lever):
 	# In the kitchen, there is a lever that you can turn to back or forward and one option is correct in opening the door
@@ -55,7 +54,6 @@ def pantry(dial):
 				print("Invalid option")
 	return dial
 
-
 def main():
   # Contains the locked door that can be unlocked via a correct combination
 	dial = "green"
@@ -84,7 +82,6 @@ def main():
 			dial = pantry(dial)
 		else:
 			print("Invalid option.")
-
 main()
 
 
@@ -140,7 +137,6 @@ def attic(cheese,ball,cat):
 
 	return cheese,ball,cat
 
-
 def bedRoom(soil,cheese,ball,cat):
   # In the bedroom, you will encounter a mouse or a cat depending on certain conditions being met. Only when the cat is gone, can the mouse be present
 
@@ -188,8 +184,6 @@ def bedRoom(soil,cheese,ball,cat):
 
 	return soil,cheese,ball,cat
 
-
-
 def livRoom(soil,cheese,ball,cat):
 # In the living room, you can look at a pot of soil, obtain a ball of string or choose to go to different room
 	validInput = True
@@ -225,7 +219,6 @@ def livRoom(soil,cheese,ball,cat):
 			print("You picked up the ball of string.")
 		else:
 			print("Invalid option.")
-
 
 def main2():
 
